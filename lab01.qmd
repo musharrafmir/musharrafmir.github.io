@@ -1,6 +1,6 @@
 ---
-title: "EPPS 6323: Lab01 R programming basics I"
-author: "My name"
+title: "Lab 1"
+author: "Musharraf Mir Akhmadova"
 format: html
 editor: visual
 ---
