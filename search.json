@@ -243,5 +243,47 @@
     "title": "Assignment2",
     "section": "Step 5. Reflection",
     "text": "Step 5. Reflection\n\nHow did each model approach the systematic review differently?\nEach model approached the systematic review in a slightly different way. ChatGPT focused on providing clear and simple explanations, which made the content easy to understand. However, it was sometimes less detailed.\nCopilot focused on strong structure and organization. It clearly followed the format of a systematic review and included a detailed methodology section. This made the output more academic and well-organized.\nGrok provided the most detailed and analytical response. It included deeper discussion of findings, trends, and gaps, and proposed a more specific and realistic hypothesis. However, its explanations were sometimes more complex.\n\n\nWhich prompt refinements yielded the best results for each model?\nThe refined prompts improved the outputs for all models. For ChatGPT, adding instructions for a clearer methodology and better references made the response more complete.\nFor Copilot, asking for deeper analysis helped improve the discussion and made it less descriptive and more critical.\nFor Grok, simplifying the language in the prompt made the output easier to read while still keeping strong analysis.\nOverall, refining the prompts helped each model perform better based on its weaknesses.\n\n\nWhat did you learn about leveraging AI for structured academic reviews?\nThis exercise showed that the quality of AI output depends strongly on the prompt. A simple prompt gives a general answer, but a well-designed prompt produces a more structured and detailed response.\nI also learned that different AI models have different strengths. Some are better at structure, others at explanation, and others at deeper analysis.\nBy comparing models and refining prompts, it is possible to combine their strengths and produce a better final result. This shows that AI can be a useful tool for academic work if it is used carefully and thoughtfully."
+  },
+  {
+    "objectID": "Assignment3.html",
+    "href": "Assignment3.html",
+    "title": "Assignment 3",
+    "section": "",
+    "text": "library(haven)\n\nTEDS_2016 &lt;- read_dta(\n  \"https://github.com/datageneration/home/blob/master/DataProgramming/data/TEDS_2016.dta?raw=true\"\n)"
+  },
+  {
+    "objectID": "Assignment3.html#load-the-dataset",
+    "href": "Assignment3.html#load-the-dataset",
+    "title": "Assignment 3",
+    "section": "",
+    "text": "library(haven)\n\nTEDS_2016 &lt;- read_dta(\n  \"https://github.com/datageneration/home/blob/master/DataProgramming/data/TEDS_2016.dta?raw=true\"\n)"
+  },
+  {
+    "objectID": "Assignment3.html#create-regression-plot-function",
+    "href": "Assignment3.html#create-regression-plot-function",
+    "title": "Assignment 3",
+    "section": "2. Create regression plot function",
+    "text": "2. Create regression plot function\n\nregplot &lt;- function(x, y) {\n  fit &lt;- lm(y ~ x)\n  plot(x, y)\n  abline(fit, col = \"red\")\n}"
+  },
+  {
+    "objectID": "Assignment3.html#regression-plots",
+    "href": "Assignment3.html#regression-plots",
+    "title": "Assignment 3",
+    "section": "3. Regression plots",
+    "text": "3. Regression plots\n\n# Age\nregplot(TEDS_2016$age, TEDS_2016$Tondu)\n\n\n\n\n\n\n\n# Education\nregplot(TEDS_2016$edu, TEDS_2016$Tondu)\n\n\n\n\n\n\n\n# Income\nregplot(TEDS_2016$income, TEDS_2016$Tondu)"
+  },
+  {
+    "objectID": "Assignment3.html#what-is-the-problem-why",
+    "href": "Assignment3.html#what-is-the-problem-why",
+    "title": "Assignment 3",
+    "section": "4. What is the problem? Why?",
+    "text": "4. What is the problem? Why?\nThe main problem is that the dependent variable (Tondu) is not continuous. It is a categorical variable with several categories (from 1 to 9). Linear regression assumes that the dependent variable is continuous, so this assumption is violated.\nThis problem can be seen clearly in the plots. The values of Tondu appear as separate horizontal lines instead of a smooth distribution. Because of this, the regression line does not fit the data well and does not capture a meaningful relationship.\nIn addition, the relationship between Tondu and the independent variables (age, education, and income) does not appear to be linear. The points are scattered without a clear pattern, so a straight line is not a good representation of the relationship.\nOverall, linear regression is not appropriate for this type of dependent variable."
+  },
+  {
+    "objectID": "Assignment3.html#what-can-be-done-to-improve-prediction-of-the-dependent-variable",
+    "href": "Assignment3.html#what-can-be-done-to-improve-prediction-of-the-dependent-variable",
+    "title": "Assignment 3",
+    "section": "5. What can be done to improve prediction of the dependent variable?",
+    "text": "5. What can be done to improve prediction of the dependent variable?\nTo improve prediction, a different type of model should be used. Since the dependent variable is categorical with multiple categories, multinomial logistic regression would be more appropriate than linear regression.\nAnother improvement is to treat Tondu as a factor variable instead of numeric. This helps the model correctly understand that the values represent categories, not continuous numbers.\nIt is also important to choose models that can handle non-linear relationships, since the plots do not show a clear linear pattern. Methods such as classification models or tree-based models could perform better.\nFinally, improving data quality and including more relevant variables may also help improve prediction."
   }
 ]
