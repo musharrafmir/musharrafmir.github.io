@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Musharraf Mir Akhmadova">
+
+<title>Assignment 4 – Musharraf Mir Akhmadova</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Musharraf Mir Akhmadova</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./CV.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="./Lab01.html">
+ <span class="dropdown-text">Lab 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Lab02.html">
+ <span class="dropdown-text">Lab 2</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+        <li>
+    <a class="dropdown-item" href="./Assignment1.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Assignment2.html">
+ <span class="dropdown-text">Assignment 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Assignment3.html">
+ <span class="dropdown-text">Assignment 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Assignment4.html">
+ <span class="dropdown-text">Assignment 4</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./Reflections.html"> 
+<span class="menu-text">Weekly Reflections</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#review-of-quanteda-tutorial" id="toc-review-of-quanteda-tutorial" class="nav-link active" data-scroll-target="#review-of-quanteda-tutorial">1. Review of quanteda tutorial</a></li>
+  <li><a href="#u.s.-presidential-inaugural-speeches" id="toc-u.s.-presidential-inaugural-speeches" class="nav-link" data-scroll-target="#u.s.-presidential-inaugural-speeches">2. U.S. Presidential Inaugural Speeches</a>
+  <ul class="collapse">
+  <li><a href="#most-frequent-words" id="toc-most-frequent-words" class="nav-link" data-scroll-target="#most-frequent-words">Most frequent words</a></li>
+  <li><a href="#word-cloud" id="toc-word-cloud" class="nav-link" data-scroll-target="#word-cloud">Word cloud</a></li>
+  <li><a href="#word-frequency-over-time" id="toc-word-frequency-over-time" class="nav-link" data-scroll-target="#word-frequency-over-time">Word frequency over time</a></li>
+  <li><a href="#similarity-among-modern-presidents" id="toc-similarity-among-modern-presidents" class="nav-link" data-scroll-target="#similarity-among-modern-presidents">Similarity among modern presidents</a></li>
+  <li><a href="#keyness-pre-2000-and-post-2000-speeches" id="toc-keyness-pre-2000-and-post-2000-speeches" class="nav-link" data-scroll-target="#keyness-pre-2000-and-post-2000-speeches">Keyness: pre-2000 and post-2000 speeches</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  </ul></li>
+  <li><a href="#department-of-defense-reports" id="toc-department-of-defense-reports" class="nav-link" data-scroll-target="#department-of-defense-reports">3. Department of Defense Reports</a>
+  <ul class="collapse">
+  <li><a href="#most-frequent-words-1" id="toc-most-frequent-words-1" class="nav-link" data-scroll-target="#most-frequent-words-1">Most frequent words</a></li>
+  <li><a href="#word-cloud-1" id="toc-word-cloud-1" class="nav-link" data-scroll-target="#word-cloud-1">Word cloud</a></li>
+  <li><a href="#keyness-pre-2015-and-post-2015-reports" id="toc-keyness-pre-2015-and-post-2015-reports" class="nav-link" data-scroll-target="#keyness-pre-2015-and-post-2015-reports">Keyness: pre-2015 and post-2015 reports</a></li>
+  </ul></li>
+  <li><a href="#what-is-wordfish" id="toc-what-is-wordfish" class="nav-link" data-scroll-target="#what-is-wordfish">4. What is Wordfish?</a>
+  <ul class="collapse">
+  <li><a href="#run-wordfish-on-dod-reports" id="toc-run-wordfish-on-dod-reports" class="nav-link" data-scroll-target="#run-wordfish-on-dod-reports">Run Wordfish on DOD reports</a></li>
+  <li><a href="#plot-document-positions" id="toc-plot-document-positions" class="nav-link" data-scroll-target="#plot-document-positions">Plot document positions</a></li>
+  <li><a href="#plot-word-positions" id="toc-plot-word-positions" class="nav-link" data-scroll-target="#plot-word-positions">Plot word positions</a></li>
+  <li><a href="#wordfish-positions-over-time" id="toc-wordfish-positions-over-time" class="nav-link" data-scroll-target="#wordfish-positions-over-time">Wordfish positions over time</a></li>
+  <li><a href="#interpretation-1" id="toc-interpretation-1" class="nav-link" data-scroll-target="#interpretation-1">Interpretation</a></li>
+  </ul></li>
+  <li><a href="#how-to-compare-positions" id="toc-how-to-compare-positions" class="nav-link" data-scroll-target="#how-to-compare-positions">5. How to compare positions</a></li>
+  <li><a href="#hackathon-apsa-ejobs-text-analytics" id="toc-hackathon-apsa-ejobs-text-analytics" class="nav-link" data-scroll-target="#hackathon-apsa-ejobs-text-analytics">6. Hackathon: APSA eJobs Text Analytics</a>
+  <ul class="collapse">
+  <li><a href="#most-frequent-words-2" id="toc-most-frequent-words-2" class="nav-link" data-scroll-target="#most-frequent-words-2">Most frequent words</a></li>
+  <li><a href="#word-cloud-2" id="toc-word-cloud-2" class="nav-link" data-scroll-target="#word-cloud-2">Word cloud</a></li>
+  <li><a href="#skills-and-subfield-terms" id="toc-skills-and-subfield-terms" class="nav-link" data-scroll-target="#skills-and-subfield-terms">Skills and subfield terms</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">7. Summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Assignment 4</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Musharraf Mir Akhmadova </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="review-of-quanteda-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="review-of-quanteda-tutorial">1. Review of quanteda tutorial</h2>
+<p>For this assignment, I reviewed the quanteda tutorial: https://tutorials.quanteda.io/. The tutorial explains how text data can be prepared and analyzed in R. I learned that text data first needs to be cleaned and changed into a format that R can analyze.</p>
+<p>In this assignment, I use <code>quanteda</code> to analyze U.S. presidential inaugural speeches, Department of Defense reports, and APSA eJobs postings.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda.textstats)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda.textplots)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda.textmodels)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readtext)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="u.s.-presidential-inaugural-speeches" class="level2">
+<h2 class="anchored" data-anchor-id="u.s.-presidential-inaugural-speeches">2. U.S. Presidential Inaugural Speeches</h2>
+<p>In this section, I analyze U.S. presidential inaugural speeches to see similarities and differences over time and among presidents.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>corp_inaug <span class="ot">&lt;-</span> data_corpus_inaugural</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(corp_inaug, <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Corpus consisting of 60 documents, showing 10 documents:
+
+            Text Types Tokens Sentences Year  President   FirstName
+ 1789-Washington   625   1537        24 1789 Washington      George
+ 1793-Washington    96    147         5 1793 Washington      George
+      1797-Adams   826   2577        37 1797      Adams        John
+  1801-Jefferson   717   1923        43 1801  Jefferson      Thomas
+  1805-Jefferson   804   2380        45 1805  Jefferson      Thomas
+    1809-Madison   535   1261        21 1809    Madison       James
+    1813-Madison   541   1302        33 1813    Madison       James
+     1817-Monroe  1040   3677       121 1817     Monroe       James
+     1821-Monroe  1259   4886       131 1821     Monroe       James
+      1825-Adams  1003   3147        75 1825      Adams John Quincy
+                 Party
+                  none
+                  none
+            Federalist
+ Democratic-Republican
+ Democratic-Republican
+ Democratic-Republican
+ Democratic-Republican
+ Democratic-Republican
+ Democratic-Republican
+ Democratic-Republican</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>toks_inaug <span class="ot">&lt;-</span> <span class="fu">tokens</span>(corp_inaug,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">remove_punct =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">remove_numbers =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                     <span class="at">remove_symbols =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>toks_inaug <span class="ot">&lt;-</span> <span class="fu">tokens_remove</span>(toks_inaug, <span class="fu">stopwords</span>(<span class="st">"en"</span>))</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>dfm_inaug <span class="ot">&lt;-</span> <span class="fu">dfm</span>(toks_inaug)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>dfm_inaug <span class="ot">&lt;-</span> <span class="fu">dfm_trim</span>(dfm_inaug, <span class="at">min_termfreq =</span> <span class="dv">5</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>dfm_inaug</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Document-feature matrix of: 60 documents, 2,654 features (81.11% sparse) and 4 docvars.
+                 features
+docs              fellow-citizens senate house representatives among
+  1789-Washington               1      1     2               2     1
+  1793-Washington               0      0     0               0     0
+  1797-Adams                    3      1     0               2     4
+  1801-Jefferson                2      0     0               0     1
+  1805-Jefferson                0      0     0               0     7
+  1809-Madison                  1      0     0               0     0
+                 features
+docs              vicissitudes incident life event filled
+  1789-Washington            1        1    1     2      1
+  1793-Washington            0        0    0     0      0
+  1797-Adams                 0        0    2     0      0
+  1801-Jefferson             0        0    1     0      0
+  1805-Jefferson             0        0    2     0      0
+  1809-Madison               0        0    1     0      1
+[ reached max_ndoc ... 54 more documents, reached max_nfeat ... 2,644 more features ]</code></pre>
+</div>
+</div>
+<section id="most-frequent-words" class="level3">
+<h3 class="anchored" data-anchor-id="most-frequent-words">Most frequent words</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">topfeatures</span>(dfm_inaug, <span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    people government         us        can       must       upon      great 
+       592        575        507        489        377        371        354 
+       may     states      world     nation    country      shall      every 
+       343        343        329        324        323        316        309 
+       one      peace        new      power        now     public 
+       274        259        256        246        238        227 </code></pre>
+</div>
+</div>
+<p>The most frequent words show common themes in presidential speeches. These speeches often focus on the country, people, government, freedom, and national unity.</p>
+</section>
+<section id="word-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="word-cloud">Word cloud</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_wordcloud</span>(dfm_inaug,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">max_words =</span> <span class="dv">100</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="word-frequency-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="word-frequency-over-time">Word frequency over time</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>key_words <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"nation"</span>, <span class="st">"freedom"</span>, <span class="st">"peace"</span>, <span class="st">"war"</span>, <span class="st">"people"</span>, <span class="st">"government"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>freq_time <span class="ot">&lt;-</span> <span class="fu">textstat_frequency</span>(dfm_inaug,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                                <span class="at">groups =</span> <span class="fu">docvars</span>(dfm_inaug, <span class="st">"Year"</span>))</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>freq_time <span class="ot">&lt;-</span> freq_time <span class="sc">%&gt;%</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(feature <span class="sc">%in%</span> key_words)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(freq_time, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.numeric</span>(group), <span class="at">y =</span> frequency)) <span class="sc">+</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> feature, <span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Frequency of Selected Words Over Time"</span>,</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Frequency"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This graph shows how selected words change over time. Some words may become more common during specific historical periods, such as war, economic crisis, or national change.</p>
+</section>
+<section id="similarity-among-modern-presidents" class="level3">
+<h3 class="anchored" data-anchor-id="similarity-among-modern-presidents">Similarity among modern presidents</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>dfm_modern <span class="ot">&lt;-</span> <span class="fu">dfm_subset</span>(dfm_inaug, Year <span class="sc">&gt;=</span> <span class="dv">1960</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>sim_mat <span class="ot">&lt;-</span> <span class="fu">textstat_simil</span>(dfm_modern,</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">method =</span> <span class="st">"cosine"</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>                          <span class="at">margin =</span> <span class="st">"documents"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>sim_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">as.matrix</span>(sim_mat))</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>sim_long <span class="ot">&lt;-</span> sim_df <span class="sc">%&gt;%</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">rownames_to_column</span>(<span class="st">"doc1"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="sc">-</span>doc1,</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"doc2"</span>,</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"similarity"</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(sim_long, <span class="fu">aes</span>(<span class="at">x =</span> doc1, <span class="at">y =</span> doc2, <span class="at">fill =</span> similarity)) <span class="sc">+</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Cosine Similarity Among Modern Inaugural Speeches"</span>,</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">""</span>,</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">""</span>,</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Similarity"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Cosine similarity compares speeches based on word use. Speeches with similar language have higher similarity scores.</p>
+</section>
+<section id="keyness-pre-2000-and-post-2000-speeches" class="level3">
+<h3 class="anchored" data-anchor-id="keyness-pre-2000-and-post-2000-speeches">Keyness: pre-2000 and post-2000 speeches</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>dfm_era <span class="ot">&lt;-</span> <span class="fu">dfm_group</span>(dfm_inaug,</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">groups =</span> <span class="fu">ifelse</span>(<span class="fu">docvars</span>(dfm_inaug, <span class="st">"Year"</span>) <span class="sc">&gt;=</span> <span class="dv">2000</span>,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"Post-2000"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"Pre-2000"</span>))</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>keyness_inaug <span class="ot">&lt;-</span> <span class="fu">textstat_keyness</span>(dfm_era, <span class="at">target =</span> <span class="st">"Post-2000"</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_keyness</span>(keyness_inaug, <span class="at">n =</span> <span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Keyness shows which words are more common in one group of speeches compared with another group.</p>
+</section>
+<section id="interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
+<p>The inaugural speeches show both similarities and differences. The similarities are connected to repeated national themes such as people, government, freedom, and country. These themes are expected because inaugural speeches usually present a president’s vision for the nation.</p>
+<p>The differences show that presidential language changes over time. Earlier speeches may use more formal language and focus more on the Constitution, union, and national foundation. More recent speeches may include language related to security, economy, global issues, and modern political challenges.</p>
+</section>
+</section>
+<section id="department-of-defense-reports" class="level2">
+<h2 class="anchored" data-anchor-id="department-of-defense-reports">3. Department of Defense Reports</h2>
+<p>In this section, I analyze U.S. Department of Defense reports. These reports help show how official defense language changes over time.</p>
+<p><strong>Important:</strong> change the folder path below to the folder where your DOD reports are saved.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dod_files <span class="ot">&lt;-</span> <span class="fu">readtext</span>(<span class="st">"USDOD/*.pdf"</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>dod_files<span class="sc">$</span>year <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">regmatches</span>(dod_files<span class="sc">$</span>doc_id,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>             <span class="fu">regexpr</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">d{4}"</span>, dod_files<span class="sc">$</span>doc_id))</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>corp_dod <span class="ot">&lt;-</span> <span class="fu">corpus</span>(dod_files)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="fu">docvars</span>(corp_dod, <span class="st">"year"</span>) <span class="ot">&lt;-</span> dod_files<span class="sc">$</span>year</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(corp_dod, <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Corpus consisting of 24 documents, showing 5 documents:
+
+                         Text Types Tokens Sentences year
+            1999_GPO-CRPT.pdf 16068 301499     14034 1999
+ 2000_asia_neac_dod_china.pdf  2990  15078       601 2000
+              2001_DoD_AR.pdf 14864 186149      7952 2001
+           2002_0712china.pdf  4178  25908      1229 2002
+             2003_chinaex.pdf  4068  25848      1188 2003</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>toks_dod <span class="ot">&lt;-</span> <span class="fu">tokens</span>(corp_dod,</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">remove_punct =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">remove_numbers =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">remove_symbols =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>toks_dod <span class="ot">&lt;-</span> <span class="fu">tokens_remove</span>(toks_dod, <span class="fu">stopwords</span>(<span class="st">"en"</span>))</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>dfm_dod <span class="ot">&lt;-</span> <span class="fu">dfm</span>(toks_dod)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>dfm_dod <span class="ot">&lt;-</span> <span class="fu">dfm_trim</span>(dfm_dod,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>                    <span class="at">min_termfreq =</span> <span class="dv">10</span>,</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>                    <span class="at">min_docfreq =</span> <span class="dv">3</span>)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>dfm_dod</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Document-feature matrix of: 24 documents, 5,882 features (43.35% sparse) and 1 docvar.
+                              features
+docs                            u.s national security military commercial
+  1999_GPO-CRPT.pdf            1676      510      701      468        294
+  2000_asia_neac_dod_china.pdf    2       54       32       99          7
+  2001_DoD_AR.pdf               656      323      302      718        139
+  2002_0712china.pdf             35       65       44      192         10
+  2003_chinaex.pdf               41       69       48      189         13
+  2004_0528PRC.pdf               57       58       49      212          6
+                              features
+docs                           concerns people’s republic china volume
+  1999_GPO-CRPT.pdf                  90       93       88   645    416
+  2000_asia_neac_dod_china.pdf        4        9        3   160      0
+  2001_DoD_AR.pdf                    37        0        9    13      3
+  2002_0712china.pdf                  6        5        3   287      0
+  2003_chinaex.pdf                    8        7        2   239      0
+  2004_0528PRC.pdf                   15        7        3   199      1
+[ reached max_ndoc ... 18 more documents, reached max_nfeat ... 5,872 more features ]</code></pre>
+</div>
+</div>
+<section id="most-frequent-words-1" class="level3">
+<h3 class="anchored" data-anchor-id="most-frequent-words-1">Most frequent words</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">topfeatures</span>(dfm_dod, <span class="dv">25</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       china     military      defense      china’s          prc          pla 
+        9782         8586         6408         5564         5328         4916 
+    security          u.s        force   operations       forces       states 
+        4278         3917         3433         3061         3033         2942 
+        also     national       united       taiwan          air       report 
+        2798         2789         2780         2592         2469         2430 
+  technology capabilities   department      systems  information     people’s 
+        2366         2304         2298         2292         2239         2194 
+   committee 
+        2185 </code></pre>
+</div>
+</div>
+<p>The most frequent words give a general view of the main topics in the DOD reports. Since these are defense reports, I expect words related to military, China, security, forces, and strategy to appear frequently.</p>
+</section>
+<section id="word-cloud-1" class="level3">
+<h3 class="anchored" data-anchor-id="word-cloud-1">Word cloud</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_wordcloud</span>(dfm_dod,</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">max_words =</span> <span class="dv">80</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="keyness-pre-2015-and-post-2015-reports" class="level3">
+<h3 class="anchored" data-anchor-id="keyness-pre-2015-and-post-2015-reports">Keyness: pre-2015 and post-2015 reports</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>dfm_dod_era <span class="ot">&lt;-</span> <span class="fu">dfm_group</span>(dfm_dod,</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>                         <span class="at">groups =</span> <span class="fu">ifelse</span>(<span class="fu">docvars</span>(corp_dod, <span class="st">"year"</span>) <span class="sc">&gt;=</span> <span class="dv">2015</span>,</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>                                         <span class="st">"Post-2015"</span>,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>                                         <span class="st">"Pre-2015"</span>))</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>keyness_dod <span class="ot">&lt;-</span> <span class="fu">textstat_keyness</span>(dfm_dod_era, <span class="at">target =</span> <span class="st">"Post-2015"</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_keyness</span>(keyness_dod, <span class="at">n =</span> <span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This comparison shows which words are more common in recent DOD reports compared with earlier reports. If recent reports use more words related to competition, threat, cyber, or military modernization, this may suggest that official defense language has become more security-focused over time.</p>
+</section>
+</section>
+<section id="what-is-wordfish" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-wordfish">4. What is Wordfish?</h2>
+<p>Wordfish is a text scaling method. It estimates the position of documents based on word frequencies. In simple terms, Wordfish looks at how documents use words and places each document on a scale.</p>
+<p>This is useful when we want to compare documents but do not already know their positions. For example, with DOD reports, Wordfish can help show whether some reports use more cooperative language while others use more competitive or security-focused language.</p>
+<p>Wordfish is an unsupervised method. This means we do not need to assign scores or labels to the documents before running the model. However, after the model gives positions, the researcher still needs to interpret what the scale means.</p>
+<section id="run-wordfish-on-dod-reports" class="level3">
+<h3 class="anchored" data-anchor-id="run-wordfish-on-dod-reports">Run Wordfish on DOD reports</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>wf_dod <span class="ot">&lt;-</span> <span class="fu">textmodel_wordfish</span>(dfm_dod, <span class="at">dir =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(wf_dod)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+textmodel_wordfish.dfm(x = dfm_dod, dir = c(1, 2))
+
+Estimated Document Positions:
+                                                                                       theta
+1999_GPO-CRPT.pdf                                                                   -4.17386
+2000_asia_neac_dod_china.pdf                                                        -0.19485
+2001_DoD_AR.pdf                                                                     -1.56419
+2002_0712china.pdf                                                                  -0.31720
+2003_chinaex.pdf                                                                    -0.16977
+2004_0528PRC.pdf                                                                    -0.09360
+2005_0719china.pdf                                                                   0.02447
+2006_dod.pdf                                                                         0.09343
+2007_dod.pdf                                                                         0.12475
+2008_dod.pdf                                                                         0.16768
+2009_China_Military_Power_Report.pdf                                                 0.19009
+2010_CMPR_Final.pdf                                                                  0.23827
+2011_CMPR_Final.pdf                                                                  0.28947
+2012_CMPR_Final.pdf                                                                  0.34862
+2013_China_Report_FINAL.pdf                                                          0.35165
+2014_DoD_China_Report.pdf                                                            0.38737
+2015_China_Military_Power_Report.pdf                                                 0.42003
+2016 China Military Power Report.pdf                                                 0.48946
+2017_China_Military_Power_Report.pdf                                                 0.53226
+2018_CHINA-MILITARY-POWER-REPORT.pdf                                                 0.56635
+2019_CHINA_MILITARY_POWER_REPORT.pdf                                                 0.56235
+2020_DOD-CHINA-MILITARY-POWER-REPORT-FINAL.pdf                                       0.58244
+2021-cmpr-final.pdf                                                                  0.58451
+2022-military-and-security-developments-involving-the-peoples-republic-of-china.pdf  0.56027
+                                                                                          se
+1999_GPO-CRPT.pdf                                                                   0.006392
+2000_asia_neac_dod_china.pdf                                                        0.027826
+2001_DoD_AR.pdf                                                                     0.010385
+2002_0712china.pdf                                                                  0.022115
+2003_chinaex.pdf                                                                    0.020978
+2004_0528PRC.pdf                                                                    0.020513
+2005_0719china.pdf                                                                  0.021447
+2006_dod.pdf                                                                        0.019314
+2007_dod.pdf                                                                        0.020543
+2008_dod.pdf                                                                        0.016308
+2009_China_Military_Power_Report.pdf                                                0.014389
+2010_CMPR_Final.pdf                                                                 0.013579
+2011_CMPR_Final.pdf                                                                 0.011499
+2012_CMPR_Final.pdf                                                                 0.016469
+2013_China_Report_FINAL.pdf                                                         0.010851
+2014_DoD_China_Report.pdf                                                           0.009874
+2015_China_Military_Power_Report.pdf                                                0.008517
+2016 China Military Power Report.pdf                                                0.006372
+2017_China_Military_Power_Report.pdf                                                0.005791
+2018_CHINA-MILITARY-POWER-REPORT.pdf                                                0.004247
+2019_CHINA_MILITARY_POWER_REPORT.pdf                                                0.004336
+2020_DOD-CHINA-MILITARY-POWER-REPORT-FINAL.pdf                                      0.003137
+2021-cmpr-final.pdf                                                                 0.003049
+2022-military-and-security-developments-involving-the-peoples-republic-of-china.pdf 0.003314
+
+Estimated Feature Scores:
+         u.s national security military commercial concerns people’s republic
+beta -0.3517 -0.01374  0.07323   0.3168    -0.3208  -0.1291   0.7182   0.6717
+psi   4.4233  4.50398  4.98058   5.7329     2.8282   2.3164   4.3186   4.2054
+      china  volume  select committee  united states  house representatives
+beta 0.4188 -1.1150 -1.4649    -1.087 -0.3802 -0.357 -1.949        -1.31176
+psi  5.8624 -0.1476 -0.4196     1.555  4.0248  4.127 -2.713        -0.06555
+     congress  session   report submitted      mr california chairman january
+beta   0.5751 -0.32412 -0.09796   -0.5737 0.05387    -0.6393  -0.1942 -0.1506
+psi    4.0895  0.00755  4.29905   -0.2274 1.35502    -0.7987   2.1882  2.0776
+     committed    whole  state   union ordered subject
+beta   -0.1620 -0.01375 -0.358 -0.1255  0.3807 -0.6257
+psi     0.7809  0.46236  3.041  1.4111  0.2592  0.4845</code></pre>
+</div>
+</div>
+</section>
+<section id="plot-document-positions" class="level3">
+<h3 class="anchored" data-anchor-id="plot-document-positions">Plot document positions</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_scale1d</span>(wf_dod,</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">margin =</span> <span class="st">"documents"</span>) <span class="sc">+</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Wordfish Positions of DOD Reports"</span>,</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Estimated Position"</span>,</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Document"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="plot-word-positions" class="level3">
+<h3 class="anchored" data-anchor-id="plot-word-positions">Plot word positions</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_scale1d</span>(wf_dod,</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">margin =</span> <span class="st">"features"</span>,</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">highlighted =</span> <span class="fu">c</span>(<span class="st">"china"</span>, <span class="st">"military"</span>, <span class="st">"security"</span>,</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">"threat"</span>, <span class="st">"taiwan"</span>, <span class="st">"cyber"</span>,</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">"strategy"</span>, <span class="st">"force"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="wordfish-positions-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="wordfish-positions-over-time">Wordfish positions over time</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>positions <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">document =</span> <span class="fu">docnames</span>(dfm_dod),</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">year =</span> <span class="fu">docvars</span>(corp_dod, <span class="st">"year"</span>),</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">theta =</span> wf_dod<span class="sc">$</span>theta,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">se =</span> wf_dod<span class="sc">$</span>se.theta</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(positions, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> theta)) <span class="sc">+</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"DOD Report Positions Over Time"</span>,</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Wordfish Position"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interpretation-1" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation-1">Interpretation</h3>
+<p>The Wordfish model places each DOD report on a latent scale. If earlier reports appear on one side and later reports appear on the other side, this suggests that the language of the reports changed over time. The scale may represent a shift from more general or cooperative language to more competitive or security-focused language.</p>
+<p>However, Wordfish does not automatically explain the meaning of the scale. The interpretation depends on the documents and words located at each end of the scale.</p>
+</section>
+</section>
+<section id="how-to-compare-positions" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-compare-positions">5. How to compare positions</h2>
+<p>Text scaling methods help compare documents by placing them on a shared scale. This is different from simple word frequency because it summarizes broader patterns in language.</p>
+<p>Wordfish is useful because it does not require reference texts. It estimates positions only from word frequencies, which makes it helpful for exploratory analysis. Another method is Wordscores. Wordscores requires reference documents with known positions.</p>
+<p>In this assignment, Wordfish is a good method because the goal is exploratory. It helps compare DOD reports and examine whether official defense language changes across time.</p>
+</section>
+<section id="hackathon-apsa-ejobs-text-analytics" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-apsa-ejobs-text-analytics">6. Hackathon: APSA eJobs Text Analytics</h2>
+<p>For the hackathon part, I analyze APSA job postings. The goal is to examine what kinds of skills, subfields, and methods appear in political science job advertisements.</p>
+<p><strong>Important:</strong> change the folder path below to the folder where your APSA job files are saved.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>apsa_files <span class="ot">&lt;-</span> <span class="fu">readtext</span>(<span class="st">"APSA/*.pdf"</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>corp_apsa <span class="ot">&lt;-</span> <span class="fu">corpus</span>(apsa_files)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(corp_apsa, <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Corpus consisting of 113 documents, showing 5 documents:
+
+             Text Types Tokens Sentences
+ PSJobs201606.pdf  5541  88208      2691
+ PSJobs201607.pdf  5668  87457      2624
+ PSJobs201608.pdf  6591 123565      3907
+ PSJobs201609.pdf  9779 275862      8629
+ PSJobs201610.pdf 11958 357946     11003</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>toks_apsa <span class="ot">&lt;-</span> <span class="fu">tokens</span>(corp_apsa,</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>                    <span class="at">remove_punct =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">remove_numbers =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">remove_symbols =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>toks_apsa <span class="ot">&lt;-</span> <span class="fu">tokens_remove</span>(toks_apsa, <span class="fu">stopwords</span>(<span class="st">"en"</span>))</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>dfm_apsa <span class="ot">&lt;-</span> <span class="fu">dfm</span>(toks_apsa)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>dfm_apsa <span class="ot">&lt;-</span> <span class="fu">dfm_trim</span>(dfm_apsa,</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>                     <span class="at">min_termfreq =</span> <span class="dv">3</span>,</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>                     <span class="at">min_docfreq =</span> <span class="dv">2</span>)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>dfm_apsa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Document-feature matrix of: 113 documents, 37,799 features (83.18% sparse) and 0 docvars.
+                  features
+docs               political science jobs online journal american association
+  PSJobs201606.pdf       590     498   94    100      17      295          15
+  PSJobs201607.pdf       622     521   95    107      22      235          11
+  PSJobs201608.pdf       966     791  146    156      22      307          20
+  PSJobs201609.pdf      1993    1611  344    316      20      640          27
+  PSJobs201610.pdf      2434    2008  456    395      23      778          41
+  PSJobs201611.pdf      1383    1118  227    202      13      486          21
+                  features
+docs               june volume issue
+  PSJobs201606.pdf  129      2     5
+  PSJobs201607.pdf   22      3     5
+  PSJobs201608.pdf   20      3     5
+  PSJobs201609.pdf   29      5     5
+  PSJobs201610.pdf   28      4     6
+  PSJobs201611.pdf   21      3     5
+[ reached max_ndoc ... 107 more documents, reached max_nfeat ... 37,789 more features ]</code></pre>
+</div>
+</div>
+<section id="most-frequent-words-2" class="level3">
+<h3 class="anchored" data-anchor-id="most-frequent-words-2">Most frequent words</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">topfeatures</span>(dfm_apsa, <span class="dv">30</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     research     political    university       science      teaching 
+       161087        151384        140917        123757        119811 
+         date      position   application      politics        public 
+        94253         88120         87945         81917         81649 
+ applications    department        policy    candidates       faculty 
+        76178         73952         69905         69598         68488 
+international     professor         ejobs    applicants        salary 
+        63743         63706         61225         56736         54451 
+     students          rank       college     assistant         start 
+        53527         53397         51330         48833         48609 
+      courses      american       program          must      deadline 
+        47608         45937         45015         42034         41811 </code></pre>
+</div>
+</div>
+<p>The frequent words give an initial idea of what job postings emphasize. I expect terms related to teaching, research, methods, data, political science, public policy, and universities to appear often.</p>
+</section>
+<section id="word-cloud-2" class="level3">
+<h3 class="anchored" data-anchor-id="word-cloud-2">Word cloud</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_wordcloud</span>(dfm_apsa,</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">max_words =</span> <span class="dv">100</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="skills-and-subfield-terms" class="level3">
+<h3 class="anchored" data-anchor-id="skills-and-subfield-terms">Skills and subfield terms</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>skill_terms <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"quantitative"</span>, <span class="st">"qualitative"</span>, <span class="st">"methods"</span>, <span class="st">"data"</span>,</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"statistics"</span>, <span class="st">"causal"</span>, <span class="st">"survey"</span>, <span class="st">"public"</span>,</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"policy"</span>, <span class="st">"comparative"</span>, <span class="st">"international"</span>,</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"american"</span>, <span class="st">"theory"</span>)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>skill_freq <span class="ot">&lt;-</span> <span class="fu">textstat_frequency</span>(dfm_apsa)</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>skill_freq <span class="ot">&lt;-</span> skill_freq <span class="sc">%&gt;%</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(feature <span class="sc">%in%</span> skill_terms)</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(skill_freq, <span class="fu">aes</span>(<span class="at">x =</span> frequency, <span class="at">y =</span> <span class="fu">reorder</span>(feature, frequency))) <span class="sc">+</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Selected Skill and Subfield Terms in APSA Jobs"</span>,</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Frequency"</span>,</span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Term"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment4_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This analysis focuses on selected skills and subfield terms. It helps identify whether job postings emphasize quantitative methods, qualitative methods, public policy, comparative politics, international relations, or other areas.</p>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">7. Summary</h2>
+<p>In this assignment, I used <code>quanteda</code> to analyze U.S. presidential inaugural speeches, DOD reports, and APSA job postings. The analysis included word frequencies, word clouds, keyness, similarity, collocations, and Wordfish scaling.</p>
+<p>The presidential speeches show common national themes, but they also show changes over time. The DOD reports help show how official defense language may shift across years. The APSA job postings help identify patterns in academic job market demand.</p>
+<p>Overall, text analysis is useful because it allows researchers to study large collections of documents systematically. However, the results still require interpretation. Quantitative text tools can reveal patterns, but the researcher must explain what those patterns mean.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
